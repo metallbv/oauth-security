@@ -34,8 +34,8 @@ public class UserController {
 	}
 
 	@CrossOrigin
-	//@PreAuthorize("hasRole('ADMIN')")
-	@PreAuthorize("#oauth2.clientHasRole('ROLE_CLIENT')")
+	@PreAuthorize("hasRole('ADMIN')")
+	//@PreAuthorize("#oauth2.clientHasRole('ROLE_CLIENT')")
 	@RequestMapping("/adminprofile")
 	public ResponseEntity<UserProfile> adminprofile() {
 
